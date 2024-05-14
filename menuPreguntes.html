@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+
+<div class="contenido" id="contenido">
+    <h1>Iniciar Sesión</h1>
+    <p></p>
+</div>
+
+<div class="formulari" id="formulario">
+    <form onsubmit="return iniciarSesion()">
+        <label for="nombre">Nombre de Usuario:</label>
+        <input type="text" id="nombre" name="nombre">
+        <br>
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena">
+        <br>
+        <input type="submit" value="Iniciar Sesión">
+    </form>
+</div>
+
+<script>
+    function iniciarSesion() {
+        var nombre = document.getElementById("nombre").value;
+        var contrasena = document.getElementById("contrasena").value;
+        
+        // Aquí puedes agregar la lógica para validar el nombre de usuario y contraseña
+        
+        // Por ahora, simplemente redireccionamos a la página de inicio
+        window.location.href = "inicio.html";
+        
+        return false; // Para evitar que el formulario se envíe y la página se recargue
+    }
+</script>
+
+</body>
+</html>
