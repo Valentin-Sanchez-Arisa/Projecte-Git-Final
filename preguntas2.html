@@ -53,8 +53,10 @@
     <h2>De quina pel·lícula és aquesta imatge?</h2>
     <img src="https://sm.ign.com/ign_es/gallery/t/the-25-bes/the-25-best-harry-potter-characters_kf8p.jpg" alt="Imatge de Harry Potter">
     <div>
-        <button class="button" onclick="showMessage(false)">El Club de les Varites</button>
-        <button class="button" onclick="showMessage(true)">Harry Potter</button>
+        <div>
+            <button class="button" onclick="redirect('preguntaCinema2.html', 'Pregunta incorrecte')">Club de las baritas</button>
+            <button class="button" onclick="redirect('menuPreguntes.html', 'Pregunta correcte')">Harry Potter</button>
+        </div>
     </div>
     <div id="message"></div>
 </div>
