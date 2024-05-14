@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(0, 145, 191);
+    background: linear-gradient(180deg, rgba(0, 145, 191, 1) 0%, rgba(147, 16, 192, 1) 80%);
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+}
+
+.contenido {
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    color: #fff;
+    position: relative; /* Añadido posicionamiento relativo */
+    z-index: 1; /* Añadida la posición z para elevar el contenido sobre el formulario */
+}
+
+.formulari {
+    width: 400px;
+    position: absolute; /* Cambiado a posicionamiento absoluto */
+    top: 50%; /* Colocado en la mitad superior de la ventana */
+    left: 50%; /* Centrado horizontalmente */
+    transform: translate(-50%, -50%); /* Centrado vertical */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    margin-bottom: 20px; /* Ajusta el espacio entre el título y los botones */
+}
+
+.btn-container {
+    margin-top: 20px; /* Ajusta el espacio entre el título y los botones */
+}
+
+.btn-cultura {
+    display: block;
+    width: calc(100% - 20px);
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-cultura:hover {
+    background-color: #45a049;
+}
+
+.welcome-text {
+    margin-bottom: 20px; /* Ajusta la separación entre el mensaje de bienvenida y los botones */
+}
+
+.btn-tornar {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.username-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 30px; /* Aumento del espacio entre el cuadro de texto y el botón */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Tamaño de fuente ajustado */
+}
+
+.comencar-btn {
+    display: block;
+    margin: 0 auto; /* Centra el botón horizontalmente */
+    width: fit-content; /* Hace que el ancho del botón se ajuste automáticamente al contenido */
+    background-color: #4CAF50; /* Cambio de color a verde */
+    color: white;
+    padding: 10px 20px; /* Reducción del padding horizontal */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px; /* Tamaño de fuente ajustado */
+}
+
+.comencar-btn:hover {
+    background-color: #45a049; /* Cambio de color de hover */
+}
+

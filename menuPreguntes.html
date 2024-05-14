@@ -3,41 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú Principal</title>
+    <title>Menú de Preguntas</title>
     <link rel="stylesheet" href="css/css.css">
 </head>
 <body>
+    <div class="contenido">
+        <div id="welcomeText" class="welcome-text">
+            <!-- Aquí se mostrará el texto de bienvenida con el nombre de usuario -->
+        </div>
+        <a href="menu.html" class="btn-tornar">Tornar</a>
+        <div class="formulari">
+            <h2 class="titulo">Selecciona quina categoria de preguntes vols</h2>
+            <div class="btn-container">
+                <button class="btn-cultura">Cultura del cinema</button>
+                <button class="btn-cultura">Cultura general</button>
+            </div>
+        </div>
+    </div>
 
-<div class="contenido" id="contenido">
-    <h1>Iniciar Sesión</h1>
-    <p></p>
-</div>
-
-<div class="formulari" id="formulario">
-    <form onsubmit="return iniciarSesion()">
-        <label for="nombre">Nombre de Usuario:</label>
-        <input type="text" id="nombre" name="nombre">
-        <br>
-        <label for="contrasena">Contraseña:</label>
-        <input type="password" id="contrasena" name="contrasena">
-        <br>
-        <input type="submit" value="Iniciar Sesión">
-    </form>
-</div>
-
-<script>
-    function iniciarSesion() {
-        var nombre = document.getElementById("nombre").value;
-        var contrasena = document.getElementById("contrasena").value;
-        
-        // Aquí puedes agregar la lógica para validar el nombre de usuario y contraseña
-        
-        // Por ahora, simplemente redireccionamos a la página de inicio
-        window.location.href = "inicio.html";
-        
-        return false; // Para evitar que el formulario se envíe y la página se recargue
-    }
-</script>
-
+    <script>
+        window.onload = function() {
+            // Obtener el nombre de usuario de la URL
+            var params = new URLSearchParams(window.location.search);
+            var username = params.get('username');
+            
+            // Mostrar el nombre de usuario en el texto de bienvenida
+            var welcomeText = document.getElementById('welcomeText');
+            welcomeText.innerText = "Benvingut " + username;
+        };
+    </script>
 </body>
 </html>
