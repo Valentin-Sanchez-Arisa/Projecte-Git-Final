@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #64b5f6, #ab47bc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #444;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        .container img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+        }
+        .button {
+            background-color: #fff;
+            color: #444;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #eee;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>De quina pel·lícula és aquesta imatge?</h2>
+    <img src="https://sm.ign.com/ign_es/gallery/t/the-25-bes/the-25-best-harry-potter-characters_kf8p.jpg" alt="Imatge de Harry Potter">
+    <div>
+        <div>
+            <button class="button" onclick="redirect('preguntaCinema2.html', 'Pregunta incorrecte')">Club de las baritas</button>
+            <button class="button" onclick="redirect('menuPreguntes.html', 'Pregunta correcte')">Harry Potter</button>
+        </div>
+    </div>
+    <div id="message"></div>
+</div>
+
+<script>
+    function showMessage(isCorrect) {
+        const messageDiv = document.getElementById('message');
+        if (isCorrect) {
+            messageDiv.textContent = 'Correcte!';
+            messageDiv.style.color = 'green';
+        } else {
+            messageDiv.textContent = 'Incorrecte. Intenta-ho de nou.';
+            messageDiv.style.color = 'red';
+        }
+    }
+</script>
+
+</body>
+</html>

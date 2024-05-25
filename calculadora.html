@@ -1,94 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Calculadora</title>
-<style>
-    body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: rgb(0, 145, 191);
-    background: linear-gradient(180deg, rgba(0, 145, 191, 1) 0%, rgba(147, 16, 192, 1) 80%);
-    background-repeat: no-repeat;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
-    .calculator {
-        width: 300px;
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        padding: 20px;
-    }
-    input[type="button"] {
-        width: 60px;
-        height: 60px;
-        font-size: 24px;
-        margin: 5px;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-    }
-    input[type="button"].operator {
-        background-color: #f7941d;
-        color: #fff;
-    }
-    input[type="button"].equal {
-        background-color: #4caf50;
-        color: #fff;
-    }
-    input[type="button"].clear {
-        background-color: #e74c3c;
-        color: #fff;
-    }
-    input[type="button"]:hover {
-        background-color: #ddd;
-    }
-    input[type="text"] {
-        width: 100%;
-        margin-bottom: 10px;
-        padding: 10px;
-        font-size: 24px;
-        border: none;
-        border-radius: 5px;
-        outline: none;
-        text-align: right;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/css.css">
 </head>
-<body>
+<body> 
 
-<div class="calculator">
-    <input type="text" id="display" disabled>
-    <br>
-    <input type="button" value="7" onclick="addToDisplay('7')">
-    <input type="button" value="8" onclick="addToDisplay('8')">
-    <input type="button" value="9" onclick="addToDisplay('9')">
-    <input type="button" class="operator" value="/" onclick="addToDisplay('/')">
-    <br>
-    <input type="button" value="4" onclick="addToDisplay('4')">
-    <input type="button" value="5" onclick="addToDisplay('5')">
-    <input type="button" value="6" onclick="addToDisplay('6')">
-    <input type="button" class="operator" value="*" onclick="addToDisplay('*')">
-    <br>
-    <input type="button" value="1" onclick="addToDisplay('1')">
-    <input type="button" value="2" onclick="addToDisplay('2')">
-    <input type="button" value="3" onclick="addToDisplay('3')">
-    <input type="button" class="operator" value="-" onclick="addToDisplay('-')">
-    <br>
-    <input type="button" value="0" onclick="addToDisplay('0')">
-    <input type="button" value="." onclick="addToDisplay('.')">
-    <input type="button" class="equal" value="=" onclick="calculate()">
-    <input type="button" class="operator" value="+" onclick="addToDisplay('+')">
-    <br>
-    <input type="button" class="clear" value="C" onclick="clearDisplay()">
-</div>
+    <div class="contenido">
+        <a href="menu.html" class="btn-tornar">Tornar</a>
+
+        <div class="calculator">
+            <input type="text" id="display" disabled>
+            <br>
+            <input type="button" class="botonCalc" value="7" onclick="addToDisplay('7')">
+            <input type="button" value="8" class="botonCalc" onclick="addToDisplay('8')">
+            <input type="button" value="9" class="botonCalc" onclick="addToDisplay('9')">
+            <input type="button" class="operator botonCalc"  value="/" onclick="addToDisplay('/')">
+            <br>
+            <input type="button" value="4" class="botonCalc" onclick="addToDisplay('4')">
+            <input type="button" value="5" class="botonCalc" onclick="addToDisplay('5')">
+            <input type="button" value="6" class="botonCalc" onclick="addToDisplay('6')">
+            <input type="button" class="operator botonCalc"  value="*" onclick="addToDisplay('*')">
+            <br>
+            <input type="button" value="1" class="botonCalc"  onclick="addToDisplay('1')">
+            <input type="button" value="2" class="botonCalc" onclick="addToDisplay('2')">
+            <input type="button" value="3" class="botonCalc" onclick="addToDisplay('3')">
+            <input type="button" class="operator botonCalc" value="-" onclick="addToDisplay('-')">
+            <br>
+            <input type="button" value="0" class="botonCalc"  onclick="addToDisplay('0')">
+            <input type="button" value="." class="botonCalc"  onclick="addToDisplay('.')">
+            <input type="button" class="clear botonCalc" value="C"  onclick="clearDisplay()">
+            <input type="button" class="operator botonCalc" value="+"  onclick="addToDisplay('+')">
+            <br>
+            <input type="button" class="equal botonCalc" value="=" onclick="calculate()">
+           
+        </div>
+    </div>
+
+
 
 <script>
     function addToDisplay(value) {

@@ -51,20 +51,25 @@ body {
 }
 
 .btn-cultura {
-    display: block;
+    display: flex;
     width: calc(100% - 20px);
-    background-color: #4CAF50;
-    color: white;
+    height: 50px;
+    background-color: #D9D9D9;
+    color: black;
     padding: 12px;
     margin-bottom: 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
 .btn-cultura:hover {
-    background-color: #45a049;
+    background: linear-gradient(90deg, rgba(0,126,191,1) 0%, rgba(147,16,192,1) 100%);
+    color: white;
 }
 
 .welcome-text {
@@ -75,12 +80,23 @@ body {
     position: absolute;
     top: 10px;
     left: 10px;
-    color: #fff;
+    color: black;
     text-decoration: none;
-    background-color: #4CAF50;
+    background-color: #D9D9D9;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 335px;
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+    color: transparent;
 }
+
+.btn-tornar:hover {
+    width: 120px;
+    color: black;
+}
+
 .username-input {
     width: 80%;
     padding: 10px;
@@ -117,3 +133,89 @@ body {
     width: 110px; /* Ajuste del ancho del botón en hover */
 }
 
+
+
+
+
+/* CALCULADORA */
+
+
+
+.calculator {
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.botonCalc {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    margin: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #0091BF;
+    transition: background-color 0.3s ease;
+}
+
+.botonCalc:hover {
+    background-color: #007EBF;
+}
+
+.operator {
+    background-color: #D9D9D9;
+    color: black;
+}
+
+.operator:hover {
+    background-color: #adadad;
+
+}
+
+
+.equal {
+    width: 125px;
+    background-color: #0091BF;
+    color: white;
+}
+
+.equal:hover {
+    background-color: #007EBF;
+}
+
+
+.clear {
+  
+    background-color: #D9D9D9;
+    color: black;
+}
+
+.clear:hover {
+    background-color: #db9494;
+}
+
+#display {
+    width: 90%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 24px;
+    background-color:black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-align: right;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #64b5f6, #ab47bc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #444;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        .container img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+        }
+        .button {
+            background-color: #fff;
+            color: #444;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #eee;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>De quina pel·lícula és aquest cotxe?</h2>
+    <img src="https://www.autopista.es/uploads/s1/57/16/51/9/article-delorean-dmc-12-deportivo-regreso-al-futuro-historia-105163-5624bc0d263c2.jpeg" alt="Imatge de Regreso al Futuro">
+    <div>
+        <button class="button" onclick="redirect('preguntaCinema2.html', 'Pregunta incorrecte')">Futuro Lejano</button>
+        <button class="button" onclick="redirect('menuPreguntes.html', 'Pregunta correcte')">Regreso al Futuro</button>
+    </div>
+    <div id="message"></div>
+</div>
+
+<script>
+    function showMessage(isCorrect) {
+        const messageDiv = document.getElementById('message');
+        if (isCorrect) {
+            messageDiv.textContent = 'Correcte!';
+            messageDiv.style.color = 'green';
+        } else {
+            messageDiv.textContent = 'Incorrecte. Intenta-ho de nou.';
+            messageDiv.style.color = 'red';
+        }
+    }
+</script>
+
+</body>
+</html>

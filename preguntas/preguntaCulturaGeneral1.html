@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="shortcut icon" href="question.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #64b5f6, #ab47bc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #444;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        .container img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+        }
+        .button {
+            background-color: #fff;
+            color: #444;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #eee;
+        }
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Quin any es va descobrir américa?</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Desembarco_de_Col%C3%B3n_de_Di%C3%B3scoro_Puebla.jpg/1200px-Desembarco_de_Col%C3%B3n_de_Di%C3%B3scoro_Puebla.jpg" alt="Imatge de Star Wars">
+    <div>
+        <div>
+            <button class="button" onclick="redirect('preguntaCulturaGeneral2.html', 'Pregunta incorrecte')">1492</button>
+            <button class="button" onclick="redirect('menuPreguntes.html', 'Pregunta correcte')">1789</button>
+        </div>
+    </div>
+    <div id="message"></div>
+</div>
+
+
+
+</body>
+</html>
