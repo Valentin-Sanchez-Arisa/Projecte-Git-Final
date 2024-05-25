@@ -26,15 +26,18 @@ body {
 }
 
 .formulari {
-    width: 400px;
+    width: 600px;
+    height: 400px;
     position: absolute; /* Cambiado a posicionamiento absoluto */
     top: 50%; /* Colocado en la mitad superior de la ventana */
     left: 50%; /* Centrado horizontalmente */
     transform: translate(-50%, -50%); /* Centrado vertical */
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: #515151;
     color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -79,29 +82,38 @@ body {
     border-radius: 5px;
 }
 .username-input {
-    width: calc(100% - 20px);
+    width: 80%;
     padding: 10px;
-    margin-bottom: 30px; /* Aumento del espacio entre el cuadro de texto y el botón */
+    margin-top: 50px;
+    margin-bottom: 50px; /* Aumento del espacio entre el cuadro de texto y el botón */
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 15px;
     font-size: 16px; /* Tamaño de fuente ajustado */
+    background-color: #D9D9D9;
+    text-align: center;
+}
+
+.username-input:focus {
+    outline: none;
 }
 
 .comencar-btn {
     display: block;
     margin: 0 auto; /* Centra el botón horizontalmente */
-    width: fit-content; /* Hace que el ancho del botón se ajuste automáticamente al contenido */
-    background-color: #4CAF50; /* Cambio de color a verde */
+    width: 140px; /* Hace que el ancho del botón se ajuste automáticamente al contenido */
+    background-color: #0091BF; /* Cambio de color a verde */
     color: white;
     padding: 10px 20px; /* Reducción del padding horizontal */
     border: none;
-    border-radius: 5px;
+    border-radius: 100px;
     cursor: pointer;
     text-align: center;
     font-size: 16px; /* Tamaño de fuente ajustado */
+    transition: 0.3s;
 }
 
 .comencar-btn:hover {
-    background-color: #45a049; /* Cambio de color de hover */
+    background-color: #007EBF; /* Cambio de color de hover */
+    width: 110px; /* Ajuste del ancho del botón en hover */
 }
 
