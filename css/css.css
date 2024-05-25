@@ -244,6 +244,28 @@ body {
     background-image: url("../img/harryPotter.jpg");
 }
 
+
+.delorean {
+    background-image: url("../img/delorean.jpeg");
+}
+
+.avatar{
+    background-image: url("../img/avatar.webp");
+}
+
+.joker{
+    background-image: url("../img/joker.webp");
+}
+
+.matrix{
+    background-image: url("../img/matrix.jpg");
+}
+
+.golum{
+    background-image: url("../img/golum.webp");
+}
+
+/* ----------------------- */
 .correcte{
 
     display: flex;
