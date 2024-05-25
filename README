@@ -1,1 +1,12 @@
 Projecte final sistemes informàtics, crearem un trivial de preguntes sobre el cinema i preguntes generals. També farem una calculadora
+
+Aquest projecte inclou un trivial de preguntes generals, on es trobaran tot tipusd de preguntes. A més hi ha un trivial sobre el cinema.
+
+Com a funcionalitat extra, hi ha una calculadora.
+
+
+
+Al entrar a la web s'ha de iniciar sessió amb un nom i tot seguit escollir la funcionalitat que es vol executar.
+
+
+Per retornar enrere es pot presionar sobre el botó blanc que apareix a dalt a la esquerra.
