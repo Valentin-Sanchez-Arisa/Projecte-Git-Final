@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
-    <style>
+    <link rel="stylesheet" href="../css/css.css">
+    <!-- <style>
         body {
             font-family: Arial, sans-serif;
             background: linear-gradient(to bottom, #64b5f6, #ab47bc);
@@ -45,19 +46,32 @@
             font-size: 18px;
             font-weight: bold;
         }
-    </style>
+    </style> -->
 </head>
 <body>
+<div class="contenido">
+    
+    <a href="../Menu.html" class="btn-tornar">Tornar</a>
+    <div class="divPregunta">
+        <h1>A quina saga de pel·lícules pertany la imatge?</h1>
+        
+        <div class="orientarPreguntas">
+            <div class="parteImagen">
+                <div class="divBorde">
+                    <div class="cuadro anaquin">
 
-<div class="container">
-    <h2>A quina saga de pel·lícules pertany la imatge?</h2>
-    <img src="https://static.wikia.nocookie.net/disney/images/5/50/Profile_-_Anakin_Skywalker.png/revision/latest?cb=20231007080612" alt="Imatge de Star Wars">
-    <div>
-        <button class="button" onclick="redirect('preguntaCinema2.html', 'Pregunta incorrecte')">Star Wars</button>
-        <button class="button" onclick="redirect('menuPreguntes.html', 'Pregunta correcte')">Star Trek</button>
+                    </div>
+                </div>
+            </div>
+            <div class="partePregunta">
+                <button class="button" onclick="redirect('preguntaCinema2.html', 'Pregunta incorrecte')">Star Wars</button>
+                <button class="button" onclick="redirect('menuPreguntes.html', 'Pregunta correcte')">Star Trek</button>
+            </div>
+        </div>    
+        <div id="message"></div>
     </div>
-    <div id="message"></div>
 </div>
+
 
 <script>
     function redirect(page, message) {
