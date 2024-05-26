@@ -1,24 +1,33 @@
-let puntosCine = 0;
+let puntosCine = localStorage.getItem('puntosCine') || 0;;
 let puntosGeneral = 0;
 let nombre = "";
 let pregunta = "preguntas/preguntaCulturaGeneral1.html";
 
+function puntosDefault(){
+    localStorage.setItem('puntosCine', 0);
+    localStorage.setItem('puntosGeneral', 0);
+}
+
 function opcionCorrectaCine1(){
     puntosCine++;
     console.log(pregunta);
+    console.log(puntosCine);
+    
+    localStorage.setItem('puntosCine', puntosCine);
     window.location.href = "../correctes/correcteCine1.html";
-
 };
 
 
 function opcionIncorrectaCine1(){
- 
     window.location.href = "../correctes/incorrecteCine1.html";
 }
 
 
 function opcionCorrectaCine2(){
     puntosCine++;
+    
+    localStorage.setItem('puntosCine', puntosCine);
+    console.log(puntosCine);
     window.location.href = "../correctes/correcteCine2.html";
 };
 
@@ -31,6 +40,10 @@ function opcionIncorrectaCine2(){
 
 function opcionCorrectaCine3(){
     puntosCine++;
+    
+    localStorage.setItem('puntosCine', puntosCine);
+    console.log(puntosCine);
+
     window.location.href = "../correctes/correcteCine3.html";
 }
 
@@ -42,6 +55,8 @@ function opcionIncorrectaCine3(){
 
 function opcionCorrectaCine4(){
     puntosCine++;
+    console.log(puntosCine);
+    localStorage.setItem('puntosCine', puntosCine);
     window.location.href = "../correctes/correcteCine4.html";
 }
 
@@ -51,6 +66,9 @@ function opcionIncorrectaCine4(){
 
 function opcionCorrectaCine5(){
     puntosCine++;
+    
+    localStorage.setItem('puntosCine', puntosCine);
+    console.log(puntosCine);
     window.location.href = "../correctes/correcteCine5.html";
 }
 
@@ -61,6 +79,9 @@ function opcionIncorrectaCine5(){
 // Repeat the above pattern for options 6 to 20
 function opcionCorrectaCine6(){
     puntosCine++;
+    
+    localStorage.setItem('puntosCine', puntosCine);
+    console.log(puntosCine);
     window.location.href = "../correctes/correcteCine6.html";
 }
 
@@ -71,6 +92,9 @@ function opcionIncorrectaCine6(){
 // Continue adding the remaining functions for options 7 to 20
 function opcionCorrectaCine7(){
     puntosCine++;
+    
+    localStorage.setItem('puntosCine', puntosCine);
+    console.log(puntosCine);
     window.location.href = "../correctes/correcteCine7.html";
 }
 
@@ -81,6 +105,9 @@ function opcionIncorrectaCine7(){
 // Add functions for options 8 to 20
 function opcionCorrectaCine8(){
     puntosCine++;
+    
+    localStorage.setItem('puntosCine', puntosCine);
+    console.log(puntosCine);
     window.location.href = "../correctes/correcteCine8.html";
 }
 
@@ -91,6 +118,9 @@ function opcionIncorrectaCine8(){
 // Continue adding the remaining functions for options 9 to 20
 function opcionCorrectaCine9(){
     puntosCine++;
+    
+    localStorage.setItem('puntosCine', puntosCine);
+    console.log(puntosCine);
     window.location.href = "../correctes/correcteCine9.html";
 }
 
@@ -102,6 +132,9 @@ function opcionIncorrectaCine9(){
 
 function opcionCorrectaCine10(){
     puntosCine++;
+    
+    localStorage.setItem('puntosCine', puntosCine);
+    console.log(puntosCine);
     window.location.href = "../correctes/correcteCine10.html";
 }
 
@@ -111,6 +144,9 @@ function opcionIncorrectaCine10(){
 
 function opcionCorrectaCine11(){
     puntosCine++;
+    
+    localStorage.setItem('puntosCine', puntosCine);
+    console.log(puntosCine);
     window.location.href = "../correctes/correcteCine11.html";
 }
 
@@ -120,6 +156,9 @@ function opcionIncorrectaCine11(){
 
 function opcionCorrectaCine12(){
     puntosCine++;
+    
+    localStorage.setItem('puntosCine', puntosCine);
+    console.log(puntosCine);
     window.location.href = "../correctes/correcteCine12.html";
 }
 
@@ -129,6 +168,9 @@ function opcionIncorrectaCine12(){
 
 function opcionCorrectaCine13(){
     puntosCine++;
+    
+    localStorage.setItem('puntosCine', puntosCine);
+    console.log(puntosCine);
     window.location.href = "../correctes/correcteCine13.html";
 }
 
@@ -138,6 +180,9 @@ function opcionIncorrectaCine13(){
 
 function opcionCorrectaCine14(){
     puntosCine++;
+    
+    localStorage.setItem('puntosCine', puntosCine);
+    console.log(puntosCine);
     window.location.href = "../correctes/correcteCine14.html";
 }
 
@@ -147,6 +192,9 @@ function opcionIncorrectaCine14(){
 
 function opcionCorrectaCine15(){
     puntosCine++;
+    
+    localStorage.setItem('puntosCine', puntosCine);
+    console.log(puntosCine);
     window.location.href = "../correctes/correcteCine15.html";
 }
 
@@ -156,6 +204,9 @@ function opcionIncorrectaCine15(){
 
 function opcionCorrectaCine16(){
     puntosCine++;
+    
+    localStorage.setItem('puntosCine', puntosCine);
+    console.log(puntosCine);
     window.location.href = "../correctes/correcteCine16.html";
 }
 
@@ -165,6 +216,9 @@ function opcionIncorrectaCine16(){
 
 function opcionCorrectaCine17(){
     puntosCine++;
+    
+    localStorage.setItem('puntosCine', puntosCine);
+    console.log(puntosCine);
     window.location.href = "../correctes/correcteCine17.html";
 }
 
@@ -174,6 +228,9 @@ function opcionIncorrectaCine17(){
 
 function opcionCorrectaCine18(){
     puntosCine++;
+    
+    localStorage.setItem('puntosCine', puntosCine);
+    console.log(puntosCine);
     window.location.href = "../correctes/correcteCine18.html";
 }
 
@@ -183,6 +240,9 @@ function opcionIncorrectaCine18(){
 
 function opcionCorrectaCine19(){
     puntosCine++;
+    
+    localStorage.setItem('puntosCine', puntosCine);
+    console.log(puntosCine);
     window.location.href = "../correctes/correcteCine19.html";
 }
 
@@ -193,6 +253,9 @@ function opcionIncorrectaCine19(){
 
 function opcionCorrectaCine20(){
     puntosCine++;
+    
+    localStorage.setItem('puntosCine', puntosCine);
+    console.log(puntosCine);
     window.location.href = "../correctes/correcteCine20.html";
 }
 
@@ -200,29 +263,3 @@ function opcionIncorrectaCine20(){
     window.location.href = "../correctes/incorrecteCine20.html";
 }
 
-function opcionCorrectaCine20(){
-    puntosCine++;
-    window.location.href = "../correctes/correcteCine20.html";
-}
-
-function opcionIncorrectaCine20(){
-    window.location.href = "../correctes/incorrecteCine20.html";
-}
-
-function opcionCorrectaCine20(){
-    puntosCine++;
-    window.location.href = "../correctes/correcteCine20.html";
-}
-
-function opcionIncorrectaCine20(){
-    window.location.href = "../correctes/incorrecteCine20.html";
-}
-
-function opcionCorrectaCine20(){
-    puntosCine++;
-    window.location.href = "../correctes/correcteCine20.html";
-}
-
-function opcionIncorrectaCine20(){
-    window.location.href = "../correctes/incorrecteCine20.html";
-}
