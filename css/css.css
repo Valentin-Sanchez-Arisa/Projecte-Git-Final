@@ -361,6 +361,52 @@ body {
 
 }
 
+.jupiter{
+
+    background-image: url("../img/jupiter_auroras.sp.jpg");
+}
+.toquio{
+
+background-image: url("../img/toquio.webp");
+}
+
+.quixot{
+
+    background-image: url("../img/quixot.jpg");
+}
+.so{
+    background-image: url("../img/cielo.jpg");
+}
+.luna{
+    background-image: url("../img/luna.jpg");
+}
+.vatica{
+    background-image: url("../img/vatica.jpg");
+}
+.Romeo{
+    background-image: url("../img/RomeoJulieta.jpg");
+}
+
+
+.Xino{
+    background-image: url("../img/xina.jpeg");
+}
+
+.Sahara{
+    background-image: url("../img/sahara.jpg");
+}
+
+.George{
+    background-image: url("../img/george.jpg");
+}
+
+.plantas{
+    background-image: url("../img/plantas.webp");
+}
+
+.regne{
+    background-image: url("../img/regne.webp");
+}
 /* ----------------------- */
 .correcte{
 
