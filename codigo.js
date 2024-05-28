@@ -1,11 +1,9 @@
 let puntosCine = localStorage.getItem('puntosCine') || 0;;
-let puntosGeneral = 0;
 let nombre = "";
 let pregunta = "preguntas/preguntaCulturaGeneral1.html";
 
 function puntosDefault(){
     localStorage.setItem('puntosCine', 0);
-    localStorage.setItem('puntosGeneral', 0);
 }
 
 function opcionCorrectaCine1(){
@@ -265,7 +263,7 @@ function opcionIncorrectaCine20(){
 function opcionCorrectaCult1(){
     puntosCine++;
     
-    localStorage.setItem('puntosGeneral', puntosGeneral);
+    localStorage.setItem('puntosCine', puntosCine);
     console.log(puntosCine);
     window.location.href = "../correctes/correcteGeneral1.html";
 }
@@ -276,7 +274,7 @@ function opcionIncorrectaCult1(){
 function opcionCorrectaCult2(){
     puntosCine++;
     
-    localStorage.setItem('puntosGeneral', puntosGeneral);
+    localStorage.setItem('puntosCine', puntosCine);
     console.log(puntosCine);
     window.location.href = "../correctes/correcteGeneral2.html";
 }
@@ -287,7 +285,7 @@ function opcionIncorrectaCult2(){
 function opcionCorrectaCult3(){
     puntosCine++;
     
-    localStorage.setItem('puntosGeneral', puntosGeneral);
+    localStorage.setItem('puntosCine', puntosCine);
     console.log(puntosCine);
     window.location.href = "../correctes/correcteGeneral3.html";
 }
@@ -298,7 +296,7 @@ function opcionIncorrectaCult3(){
 function opcionCorrectaCult4(){
     puntosCine++;
     
-    localStorage.setItem('puntosGeneral', puntosGeneral);
+    localStorage.setItem('puntosCine', puntosCine);
     console.log(puntosCine);
     window.location.href = "../correctes/correcteGeneral4.html";
 }
@@ -309,7 +307,7 @@ function opcionIncorrectaCult4(){
 function opcionCorrectaCult5(){
     puntosCine++;
     
-    localStorage.setItem('puntosGeneral', puntosGeneral);
+    localStorage.setItem('puntosCine', puntosCine);
     console.log(puntosCine);
     window.location.href = "../correctes/correcteGeneral5.html";
 }
@@ -320,7 +318,7 @@ function opcionIncorrectaCult5(){
 function opcionCorrectaCult6(){
     puntosCine++;
     
-    localStorage.setItem('puntosGeneral', puntosGeneral);
+    localStorage.setItem('puntosCine', puntosCine);
     console.log(puntosCine);
     window.location.href = "../correctes/correcteGeneral6.html";
 }
@@ -331,7 +329,7 @@ function opcionIncorrectaCult6(){
 function opcionCorrectaCult7(){
     puntosCine++;
     
-    localStorage.setItem('puntosGeneral', puntosGeneral);
+    localStorage.setItem('puntosCine', puntosCine);
     console.log(puntosCine);
     window.location.href = "../correctes/correcteGeneral7.html";
 }
@@ -342,7 +340,7 @@ function opcionIncorrectaCult7(){
 function opcionCorrectaCult8(){
     puntosCine++;
     
-    localStorage.setItem('puntosGeneral', puntosGeneral);
+    localStorage.setItem('puntosCine', puntosCine);
     console.log(puntosCine);
     window.location.href = "../correctes/correcteGeneral8.html";
 }
@@ -414,6 +412,10 @@ function opcionCorrectaCult14(){
     localStorage.setItem('puntosCine', puntosCine);
     console.log(puntosCine);
     window.location.href = "../correctes/correcteCult14.html";
+}
+
+function opcionIncorrectaCult14(){
+    window.location.href = "../correctes/incorrecteCult14.html";
 }
 
 function opcionCorrectaCult15(){
